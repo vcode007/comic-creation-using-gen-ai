@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Comic Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the AI Comic Generator</h1>
+        <p>Create comics for fun!</p>
+        <p>Create your own amazing comic strips online</p>
+        <p>Enter your text to generate a unique comic!</p>
+        <a href="{{ url_for('enter_text') }}">
+            <button>Start Now</button>
+        </a>
+    </div>
+</body>
+</html>

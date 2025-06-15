@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Text for Comic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Text to Generate a Comic</h1>
+        <form method="POST" action="{{ url_for('enter_text') }}">
+            <label for="text_prompt">Text Prompt:</label>
+            <input type="text" id="text_prompt" name="text_prompt" required>
+            <br><br>
+            <button type="submit">Generate Comic</button>
+        </form>
+    </div>
+</body>
+</html>
